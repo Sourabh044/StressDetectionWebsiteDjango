@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+
+
+
+{% block content %}
+<h2>The result after using {{algo}}:</h2><br>
+<div class="d-flex justify-content-center">
+    <h1>{{result}}</h1>
+  </div>
+  <hr>
+{% if result == 'Stress' %}
+<h1 style="color: rgb(0, 0, 0); text-align: center; --fontSize:34; line-height: 1.4;" data-fontsize="34" data-lineheight="47.6px" class="fusion-responsive-typography-calculated">What is Stress?</h1>
+<h4 style="color: rgb(0, 0, 0); letter-spacing: 1px; text-align: center; --fontSize:18; line-height: 1.5; --minFontSize:18;" data-fontsize="18" data-lineheight="27px" class="fusion-responsive-typography-calculated">Stress is a feeling of emotional or physical tension. It can come from any event or thought that makes you feel frustrated, angry, or nervous. Stress is your body's reaction to a challenge or demand. In short bursts, stress can be positive, such as when it helps you avoid danger or meet a deadline.</h4>
+<div class="container" style="max-width:1090px;">
+    <hr>    
+    <div class="row">
+      <div class="col-md-4">
+                 <div class="card edit-parameters"  style="background:#59ac59;color:#fff;width:98%">
+              <div class="card-header">Sadness</div>
+              <div class="card-body">
+                     <p>Sadness is an emotional pain associated with, or characterized by, feelings of disadvantage, loss, despair, grief, helplessness, 
+                        disappointment and sorrow. An individual experiencing sadness may become quiet or lethargic, and withdraw themselves from others.</p>
+              </div>
+           </div>
+      </div>
+      <div class="col-md-4">
+                 <div class="card edit-parameters"  style="background:#59ac59;color:#fff;width:98%">
+              <div class="card-header">Alone</div>
+              <div class="card-body">
+                   <p>Some common synonyms of alone are desolate, forlorn, lonely, lonesome, lone, and solitary. While all these words mean "isolated from others,
+                    " alone stresses the objective fact of being by oneself with slighter notion of emotional involvement than most of the remaining terms.</p>
+              </div>
+           </div>
+      </div>
+      <div class="col-md-4">
+                 <div class="card edit-parameters"  style="background:#59ac59;color:#fff;width:98%">
+              <div class="card-header">Pain</div>
+              <div class="card-body">
+                <p>Emotional pain is pain or hurt that originates from non-physical sources. Sometimes this emotional distress is the result of the actions of others.
+                     Other times, it might be the result of regret, grief, or loss. Pain can be physical too. But we talk about emotional pain only.</p>
+              </div>
+           </div>
+      </div>
+
+    </div>
+  </div>
+{% endif %}
+{% endblock content %}

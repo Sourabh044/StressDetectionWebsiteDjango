@@ -1,0 +1,54 @@
+<!doctype html>
+{{form.media}}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stress Detector</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <style>
+    body {/* Created with https://www.css-gradient.com */
+background: #fcde67;}
+  </style>
+  <body>
+    <!-- As a link -->
+<nav class="navbar" style="background-color: #5bccf6 ;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Stress Detector</a>
+  </div>
+</nav>
+<br>
+<div class="d-flex justify-content-center">
+    <form action="/" method="POST">
+      {% csrf_token %}
+      <label for="css">Enter the Text Below:</label>
+      <br>
+      <br>
+      <div class="d-flex justify-content-center">
+      {{ form.dataText }}<br>
+    </div>
+    <hr>
+    <label for="css">Select the Algo you want to choose:</label>
+    <br>
+    <br>
+    <div class="d-flex justify-content-center">
+        {{ form.algo }}
+      </div>
+      <hr>
+      <div class="d-flex justify-content-center">
+      <input type="submit" value="Submit">
+      </div>
+  </form>
+</div>
+<hr>
+{% block content %}
+      
+      
+      
+{%endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

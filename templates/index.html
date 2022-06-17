@@ -1,0 +1,144 @@
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stress Detector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+  </head>
+  <style>
+body { background: rgba(0, 151, 19, 0.1);}
+      </style>
+<body >
+<div class="container" style="padding-top:30px;max-width:1090px;">
+<div class="jumbotron text-center" style="background:#cce6cc">
+  <h1 style="color:#0d860d;">Stress Detector</h1>
+  <p style="color:#0d860d">Detect Stress using text by applying various ML Algrorthims!</p> 
+</div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Stress Detector</a>
+      <span class="navbar-text">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutus">About us</a>
+            </li>
+      </span>
+    </div>
+  </nav>
+<hr>
+<div class="container" style="max-width:1090px;">
+
+         <!-- <div class="row"> -->
+             <!-- <div class="col-md-6 col-sm-12"> -->
+
+            <div class="d-flex justify-content-center">
+                <form action="/" method="POST">
+                  {% csrf_token %}
+                  <h4>Enter text:</h4>
+                  <br>
+                  <div class="d-flex justify-content-center">
+                  {{ form.dataText }}<br>
+                </div>
+                <hr>
+                <h4>Select the Algo :</h4>
+                <!-- <label for="css">Select the Algo you want to choose:</label> -->
+                <br>
+                <br>
+                <div class="d-flex justify-content-center">
+                    {{ form.algo }}
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                  <input type="submit" value="Submit">
+                  </div>
+              </form>
+            </div>
+     <br/>
+
+{% block content %}
+      
+      
+      
+{%endblock %}
+<hr>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<section class="about-us py-5 " id="aboutus">
+    <div class="container mt-5">
+	<div class="row">
+		<div class="col-md-6">
+		    <h1 class='text-success'>Welcome!</h1>
+		    <h2>Know More About Us</h2>
+		    <hr>
+        <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</P>
+		    <button type="button" class="btn btn-success">Let's Know More</button>
+
+		</div>
+		<div class="col-md-6">
+		    <img src="http://themebubble.com/demo/marketingpro/wp-content/uploads/2016/10/seo-slide.png "alt="">
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+
+<!-- Footer -->
+	<section id="footer" style="background-color: #cce6cc;">
+		<div class="container" style="background-color: #cce6cc;">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="#aboutus"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="/"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://instagram.com/Sourabh.barelypost"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://instagram.com/Sourabh.barelypost"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://instagram.com/Sourabh.barelypost"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://instagram.com/Sourabh.barelypost"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://instagram.com/Sourabh.barelypost" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p style="color: black;"><u><a href="/" style="color:black"> <b> Stress Detector </b> </a></u> is a project made by ML</p>
+					<p class="h6" style="color: black;">© All right Reversed.<a class="text-green ml-2" href="https://instagram.com/sourabh.barelypost" target="_blank">Sourabh</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+</body>
+</html>
